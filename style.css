@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     transform: scale(№);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -12,14 +15,23 @@ p{
 }
 /*HEADER________________
 ______________________*/
+.header__wrapper{
+    width: 100%;
+    height: 160px;
+}
 .header{
+    box-shadow: 2px 4px 5px gray;
+    z-index: 1001;
+    position: fixed;
+    transition: 1.5s;
+    width: 100%;
     align-items: center;
     padding-left: 20px;
     padding-right: 100px;
     height: 160px;
     background-color: #39AECF;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .logo{
     width: 150px;
@@ -72,12 +84,29 @@ ______________________*/
 .nav3:hover{
     color: #0082b3;
 }
+.nav4{
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav4:hover{
+    color: #0082b3;
+}
 /*MAIN________________
 ______________________*/
 .main{
-    margin-top: 0px;
+    margin-top: 0;
     height: 900px;
     
+}
+.main.scrolled{
+    margin-top: 160px;
 }
 .main__h1{
     text-transform: uppercase;
@@ -96,7 +125,7 @@ ______________________*/
     color: #39AECF;
     font-weight: bold;
     font-size: 28px;
-    width: 250px;
+    width: 300px;
     text-align: left;
 }
 .main__home {
@@ -270,7 +299,7 @@ ______________________*/
 .obj1__h2{
     box-sizing: border-box;
     padding-top: 17px;
-    font-size: 27px;
+    font-size: 20px;
     color: white;
     text-align: center;
     height: 70px;
@@ -292,7 +321,7 @@ ______________________*/
 .obj2__h2{
     box-sizing: border-box;
     padding-top: 12px;
-    font-size: 27px;
+    font-size: 20px;
     color: white;
     text-align: center;
     height: 70px;
@@ -325,7 +354,7 @@ ______________________*/
 .obj3__h2{
     box-sizing: border-box;
     padding-top: 12px;
-    font-size: 27px;
+    font-size: 20px;
     color: white;
     text-align: center;
     height: 70px;
@@ -347,7 +376,7 @@ ______________________*/
 .obj4__h2{
     box-sizing: border-box;
     padding-top: 12px;
-    font-size: 27px;
+    font-size: 20px;
     color: white;
     text-align: center;
     height: 70px;
@@ -365,6 +394,123 @@ ______________________*/
     width: 10px;
     background-color: white;
 }
+/*TEAM________________
+______________________*/
+.team{
+    text-align: center;
+    height: 1000px;
+}
+.team__wrapper{
+    width: 1170px;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    display: flex;
+}
+.team__h2{
+    font-size: 30px;
+    height: 40px;
+    color: white;
+    background-color: #39AECF;
+}
+.worker1__img{
+    margin-top: 70px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid rgb(51, 49, 49);
+}
+.worker1__h3{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #39AECF;
+    color: white;
+    height: 40px;
+    font-size: 30px;
+}
+.worker1__p{
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-top: 2px solid rgb(51, 49, 49);
+    margin-top: 40px;
+    color: #39AECF;
+    font-weight: 550;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.worker1{
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow:2px 4px 5px rgb(51, 49, 49);
+    width: 400px;
+    height: 600px;
+    transition: 0.3s;
+}
+.worker1.zoom{
+    width: 500px;
+    height: 700px;
+}
+
+
+.worker2__img{
+    margin-top: 70px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid rgb(51, 49, 49);
+}
+.worker2__h3{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #39AECF;
+    color: white;
+    height: 40px;
+    font-size: 30px;
+}
+.worker2__p{
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    border-top: 2px solid rgb(51, 49, 49);
+    margin-top: 40px;
+    color: #39AECF;
+    font-weight: 550;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.worker2{
+    transition: 0.3s;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow:2px 4px 5px rgb(51, 49, 49);
+    width: 400px;
+    height: 600px;
+}
+.worker2.zoom{
+    width: 500px;
+    height: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -510,6 +656,12 @@ background-color: #39AECF;
     }
     .header{
       display: none;
+    }
+    .header__wrapper{
+        display: none;
+    }
+    .main{
+        margin-top: 20px;
     }
     .main__h1 {
         margin-top: 50px;
@@ -703,6 +855,86 @@ background-color: #39AECF;
         width: 1170px;
         margin-top: 685px;
     }
+
+    .team__h2{
+        height: 80px;
+        font-size: 70px;
+        width: 1170px;
+    }
+    .team{
+        height: 2200px;
+    }
+    .team__wrapper{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 2000px;
+    }
+    .worker1{
+        height: 700px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .worker1.zoom{
+        height: 800px;
+        width: 600px;
+    }
+    .worker1__h3 {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: #39AECF;
+        color: white;
+        height: 65px;
+        font-size: 42px;
+    }
+    .worker1__p {
+        box-sizing: border-box;
+        padding-top: 20px;
+        border-top: 2px solid rgb(51, 49, 49);
+        margin-top: 40px;
+        color: #39AECF;
+        font-weight: 550;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+    }
+
+    .worker2{
+        height: 700px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .worker2.zoom{
+        height: 800px;
+        width: 600px;
+    }
+    .worker2__h3 {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: #39AECF;
+        color: white;
+        height: 65px;
+        font-size: 42px;
+    }
+    .worker2__p {
+        box-sizing: border-box;
+        padding-top: 20px;
+        border-top: 2px solid rgb(51, 49, 49);
+        margin-top: 40px;
+        color: #39AECF;
+        font-weight: 550;
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
+    }
+    
+
+
+
+
     .doc__h1 {
         height: 80px;
         font-size: 70px;

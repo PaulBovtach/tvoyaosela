@@ -1,7 +1,23 @@
+
 const circle = document.querySelector(".circle");
 const main = document.querySelector('.nav1');
 const objects = document.querySelector('.nav2');
-const contacts = document.querySelector('.nav3');
+const team = document.querySelector('.nav3');
+const contacts = document.querySelector('.nav4');
+const logo = document.querySelector('.logo')
+const header = document.querySelector('.header');
+const mainWrapper = document.querySelector('.main')
+
+
+
+
+
+
+
+logo.addEventListener('click', function Reload(){
+    parent.location.reload(); return false;
+})
+
 
 window.addEventListener('scroll', function circleProg(){
     let scrollPos = window.scrollY;
@@ -47,16 +63,38 @@ doc.addEventListener('mouseout', function zoom(event){
     }
 });
 
-main.addEventListener('click', function scrollTo(){
-    window.scrollTo(0, 150)
+main.addEventListener('click', function scrollTo(){ 
+    window.scrollTo(0, 0)
 });
 
 objects.addEventListener('click', function scrollTo(){
-    window.scrollTo(0, 3043)
+    window.scrollTo(0, 3175)
 });
 
+team.addEventListener('click', function scrollTo(){
+    window.scrollTo(0, 4521)
+});
 contacts.addEventListener('click', function scrollTo(){
-    window.scrollTo(0, 4721)
+    window.scrollTo(0, 6152.5)
+})
+
+const worker1 = document.querySelector('.worker1');
+const worker2 = document.querySelector('.worker2');
+
+worker1.addEventListener('mouseover',  function worker1zoom(){
+    worker1.classList.add('zoom')
+});
+
+worker1.addEventListener('mouseout',  function worker1zoom(){
+    worker1.classList.remove('zoom')
+});
+
+worker2.addEventListener('mouseover',  function worker1zoom(){
+    worker2.classList.add('zoom')
+});
+
+worker2.addEventListener('mouseout',  function worker1zoom(){
+    worker2.classList.remove('zoom')
 });
 
 
