@@ -153,3 +153,128 @@ p{
     position: absolute;
     margin-top: 100px;
 }
+@media (max-width: 1200px){
+    body{
+        max-width: 970px;
+    }
+}
+@media (max-width: 992px){
+    body{
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px){
+    body{
+        overflow-x: hidden;
+        max-width: none;
+    }
+    .header{
+        box-sizing: border-box;
+        width: 1170px;
+    }
+    .header__h1{
+        font-size: 42px;
+    }
+    .wrap {
+        margin-left: 335px;
+        margin-top: 36px;
+        width: 244px;
+    }
+    .object__p {
+        width: 515px;
+        text-align: center;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #39AECF;
+    }
+    .facebook {
+        margin-left: 211px;
+        width: 100px;
+        height: 100px;
+    }
+    .section1 {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        width: 1070px;
+        height: 1380px;
+        display: flex;
+    }
+    .contacts__wrapper {
+        margin-left: 95px;
+        margin-top: 80px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .object__img {
+        width: 963px;
+        height: 561px;
+    }
+    .contacts {
+        line-height: 1;
+        box-sizing: border-box;
+        padding-top: 27px;
+        margin-top: 26px;
+        box-shadow: 2px 4px 5px #000;
+        border-radius: 4px;
+        text-align: center;
+        background-color: #39AECF;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 497px;
+        height: 210px;
+    }
+    .contact__p {
+        margin-top: 0px;
+        font-size: 25px;
+    }
+    .contacts__img {
+        margin-left: 135px;
+        position: absolute;
+        margin-top: 119px;
+    }
+    .doc__h1 {
+        width: 1170px;
+        margin-top: 100px;
+        height: 62px;
+        text-align: center;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: white;
+        background-color: #39AECF;
+    }
+    .doc__wrapper{
+        width: 1170px;
+        flex-direction: column;
+        height: 1950px;
+        justify-content: space-between;
+    }
+    .doc_1{
+        width: 800px;
+        height: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .doc_2{
+        width: 800px;
+        height: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .doc_1.zoom{
+        width: 900px;
+        height: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .doc_2.zoom{
+        width: 900px;
+        height: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
