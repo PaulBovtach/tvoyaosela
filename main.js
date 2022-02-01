@@ -193,6 +193,22 @@ menu4.addEventListener('click', function scrollMenu(){
 
 })
 
+const link1 = document.querySelector('.href1');
+const link2 = document.querySelector('.href2');
+const link3 = document.querySelector('.href3');
+const hrefIcon = document.querySelector('href__law');
+
+link1.addEventListener('click', function goToLaw(){
+    document.location.href = "https://zakon.rada.gov.ua/laws/show/2866-14#Text"
+});
+link2.addEventListener('click', function goToLaw(){
+    document.location.href = "https://zakon.rada.gov.ua/laws/show/417-19#Text"
+});
+link3.addEventListener('click', function goToLaw(){
+    document.location.href = "https://zakon.rada.gov.ua/laws/show/2866-14#Text"
+});
+
+
 
 
 
