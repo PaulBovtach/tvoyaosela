@@ -35,3 +35,10 @@ doc1.addEventListener('click', function goToPage(){
 doc2.addEventListener('click', function goToPage(){
     document.location.href = "details1_2.html"
 })
+
+
+const logo = document.querySelector('.logo');
+
+logo.addEventListener('click', function goToMain(){
+    document.location.href = "https://paulbovtach.github.io/tvoyaosela/"
+})
