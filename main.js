@@ -1,7 +1,8 @@
 
 
-
-
+const requestH2 = document.querySelector('.h2__request');
+const requestbtn = document.querySelector('.href__request');
+const h1 = document.querySelector('.about__h1');
 const logo = document.querySelector('.logo')
 const header = document.querySelector('.header');
 const mainWrapper = document.querySelector('.main')
@@ -14,6 +15,25 @@ const law = document.querySelector('.nav5');
 const contacts = document.querySelector('.nav6');
 
 
+requestbtn.addEventListener('click', function requestBtnGo(){
+    let width = h1.offsetWidth;
+    if (width > 1170){
+        document.location.href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKHQdGRpTNxNHbgKWhMSwRgXsTrdNsWxcLTVTxlzmtFmpqFWSsfKQLSXRsVXQLtvVcctfsq";
+    }  else {
+        document.location.href = "mailto:uk.tvoyaoselya@gmail.com"
+    } 
+})
+
+const mailtoTransform = document.querySelector('.contm');
+
+let width = h1.offsetWidth;
+    if (width > 1170){
+        mailtoTransform.href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKHQdGRpTNxNHbgKWhMSwRgXsTrdNsWxcLTVTxlzmtFmpqFWSsfKQLSXRsVXQLtvVcctfsq"
+        requestH2.href ="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKHQdGRpTNxNHbgKWhMSwRgXsTrdNsWxcLTVTxlzmtFmpqFWSsfKQLSXRsVXQLtvVcctfsq"
+    }else{
+        mailtoTransform.href = "mailto:uk.tvoyaoselya@gmail.com"
+        requestH2.href = "mailto:uk.tvoyaoselya@gmail.com"
+    }
 
 
 
@@ -97,6 +117,7 @@ contacts.addEventListener('click', function scrollTo(){
 
 const worker1 = document.querySelector('.worker1');
 const worker2 = document.querySelector('.worker2');
+const worker3 = document.querySelector('.worker3');
 
 worker1.addEventListener('mouseover',  function worker1zoom(){
     const worker1__h3 = document.querySelector('.worker1__h3');
@@ -134,6 +155,24 @@ worker2.addEventListener('mouseout',  function worker1zoom(){
     worker2__p.classList.remove('zoom');
 });
 
+worker3.addEventListener('mouseover',  function worker1zoom(){
+    const worker3__h3 = document.querySelector('.worker3__h3');
+    const worker3__p = document.querySelector('.worker3__p');
+
+    worker3.classList.add('zoom');
+    worker3__h3.classList.add('zoom');
+    worker3__p.classList.add('zoom');
+});
+
+worker3.addEventListener('mouseout',  function worker1zoom(){
+    const worker3__h3 = document.querySelector('.worker3__h3');
+    const worker3__p = document.querySelector('.worker3__p');
+
+    worker3.classList.remove('zoom');
+    worker3__h3.classList.remove('zoom');
+    worker3__p.classList.remove('zoom');
+});
+
 
 
 const menuIcon = document.querySelector('.menu__img');
@@ -145,6 +184,7 @@ const menu3 = document.querySelector('.menu3');
 const menu4 = document.querySelector('.menu4');
 const menu5 = document.querySelector('.menu5');
 const menu6 = document.querySelector('.menu6');
+const menu7 = document.querySelector('.menu7');
 
 
 menuIcon.addEventListener('click', function openedMenu(){
@@ -158,6 +198,7 @@ menuIcon.addEventListener('click', function openedMenu(){
     menu4.classList.toggle('open');
     menu5.classList.toggle('open');
     menu6.classList.toggle('open');
+    menu7.classList.toggle('open');
 
 })
 
@@ -174,6 +215,7 @@ menu1.addEventListener('click', function scrollMenu(){
     menu4.classList.remove('open');
     menu5.classList.remove('open');
     menu6.classList.remove('open');
+    menu7.classList.remove('open');
 
 })
 menu2.addEventListener('click', function scrollMenu(){
@@ -188,6 +230,7 @@ menu2.addEventListener('click', function scrollMenu(){
     menu4.classList.remove('open');
     menu5.classList.remove('open');
     menu6.classList.remove('open');
+    menu7.classList.remove('open');
 
 })
 menu3.addEventListener('click', function scrollMenu(){
@@ -202,6 +245,7 @@ menu3.addEventListener('click', function scrollMenu(){
     menu4.classList.remove('open');
     menu5.classList.remove('open');
     menu6.classList.remove('open');
+    menu7.classList.remove('open');
 
 })
 menu4.addEventListener('click', function scrollMenu(){
@@ -216,6 +260,7 @@ menu4.addEventListener('click', function scrollMenu(){
     menu4.classList.remove('open');
     menu5.classList.remove('open');
     menu6.classList.remove('open');
+    menu7.classList.remove('open');
 
 })
 menu5.addEventListener('click', function scrollMenu(){
@@ -230,6 +275,7 @@ menu5.addEventListener('click', function scrollMenu(){
     menu4.classList.remove('open');
     menu5.classList.remove('open');
     menu6.classList.remove('open');
+    menu7.classList.remove('open');
 
 })
 menu6.addEventListener('click', function scrollMenu(){
@@ -244,9 +290,12 @@ menu6.addEventListener('click', function scrollMenu(){
     menu4.classList.remove('open');
     menu5.classList.remove('open');
     menu6.classList.remove('open');
+    menu7.classList.remove('open');
 
 })
-
+menu7.addEventListener('click', function request(){
+    document.location.href = "mailto:uk.tvoyaoselya@gmail.com"
+})
 
 
 
