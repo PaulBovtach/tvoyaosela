@@ -87,10 +87,6 @@ doc.addEventListener('mouseout', function zoom(event){
     }
 });
 
-window.addEventListener('scroll', function test(){
-    let x = window.scrollY;
-    console.log(x)
-})
 
 
 
