@@ -39,3 +39,14 @@ const logo = document.querySelector('.logo');
 logo.addEventListener('click', function goToMain(){
     document.location.href = "https://paulbovtach.github.io/tvoyaosela/"
 })
+
+
+const href1 = document.querySelector('.h1__href');
+
+
+let width = objectWrapper.offsetWidth;
+    if (width > 1170){
+        href1.href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJZWxTKGTtTKNWxWGlnmGQQrMwtFnchwPqHsGmQxqZjsCcLhHcNzlXMmPrXWNhhgnjFcXHL"
+    }else{
+        href1.href = "mailto:shevchenka5osbb@gmail.com"
+    }
