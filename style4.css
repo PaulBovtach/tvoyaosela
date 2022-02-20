@@ -72,6 +72,7 @@ p{
     height: 45px;
 }
 .doc{
+    margin-top: 70px;
     height: 1000px;
 }
 .wrap{
@@ -120,9 +121,24 @@ p{
 }
 
 
-
-
-
+.contacts__link{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    text-align: center; 
+    color: #39AECF;
+    font-size: 60px;    
+}
+.h1__href{ 
+    cursor: pointer;
+    width: 70px
+}
+.link__wrapper{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
@@ -179,6 +195,13 @@ p{
     body{
         overflow-x: hidden;
         max-width: none;
+    }
+
+    .link__wrapper {
+        margin-top: 535px;
+        width: 300px;
+        margin-left: 445px;
+        margin-right: auto;
     }
     .header{
         box-sizing: border-box;
@@ -257,6 +280,9 @@ p{
         margin-left: 135px;
         position: absolute;
         margin-top: 119px;
+    }
+    .doc{
+        margin: 0;
     }
     .doc__h1 {
         width: 1170px;
